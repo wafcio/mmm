@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <% data.categories.sort_by{ |cat| cat.label }.each_slice(3).to_a.each do |cat_group| %>
+    <div class="row">
+      <% cat_group.each do |cat| %>
+        <div class="col">
+          <strong>
+            <%= link_to cat.label, "/#{cat.slug}.html" %>
+          </strong>
+          <br>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
