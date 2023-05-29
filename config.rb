@@ -16,8 +16,22 @@ page '/*.txt', layout: false
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
+
+
 # Proxy pages
 # https://middlemanapp.com/advanced/dynamic-pages/
+
+categories = YAML.load_file("data/categories.yml")
+
+categories.each do |category|
+  proxy(
+    "/#{category["slug"]}.html",
+    '/category.html',
+    locals: {
+      slug: category["slug"]
+    }
+  )  
+end
 
 # proxy(
 #   '/this-page-has-no-template.html',

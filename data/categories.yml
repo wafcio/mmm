@@ -1,0 +1,18 @@
+- label: Obrazki dla maluchów
+  label_short: Obrazki dla maluchów
+  slug: obrazki_dla_maluchow
+- label: Książeczki Puzzle (3 elementy)
+  label_short: Książeczki puzzle (3 el)
+  slug: puzzle_3
+- label: Książeczki Puzzle (9 elementów)
+  label_short: Książeczki puzzle (9 el)
+  slug: puzzle_9
+- label: Książeczki Puzzle (30 elementów)
+  label_short: Książeczki puzzle (30 el)
+  slug: puzzle_30
+- label: Książeczki Puzzle (50 elementów)
+  label_short: Książeczki puzzle (50 el)
+  slug: puzzle_50
+- label: Mój pierwszy komiks 5+
+  label_short: Mój pierwszy komiks 5+
+  slug: komiks_5

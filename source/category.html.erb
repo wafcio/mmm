@@ -1,0 +1,17 @@
+<% category = data.categories.find { |cat| cat.slug == slug } %>
+<% elements = data[slug] %>
+
+<h3><%= category.label %></h3>
+
+<div class="container text-center">
+  <% elements.sort_by{ |el| el.label }.each_slice(3).to_a.each do |element_group| %>
+    <div class="row">
+      <% element_group.each do |element| %>
+        <div class="col">
+          <strong><%= element.label %></strong><br>
+          <img src="/images/<%= slug %>/<%= element.image %>" style="max-width: 250px" />
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
